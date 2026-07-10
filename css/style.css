@@ -1,45 +1,92 @@
-body {
-    font-family: Arial, sans-serif;
+html{
+    scroll-behavior:smooth;
+}
+.company-logo{
+    width:180px;
+    max-width:100%;
+    height:auto;
+    object-fit:contain;
+    transition:.35s ease;
+}
+
+.company-logo:hover{
+    transform:scale(1.03);
+}
+body{
+
+font-family:'Poppins',sans-serif;
+
+overflow-x:hidden;
+
 }
 
 .navbar-brand {
     font-size: 1.5rem;
 }
 .hero{
-    min-height:90vh;
+
+    min-height:100vh;
+
     display:flex;
+
     align-items:center;
+
     background:#f8f9fa;
+
+    padding:80px 0;
+
 }
 
 .hero h1{
-    color:#1b4332;
+    font-size:clamp(2rem,5vw,3.5rem);
+    
+    font-weight:800;
+
+    color:#1B4332;
+
+    line-height:1.2;
+
 }
 
 .hero p{
-    color:#555;
-    font-size:1.1rem;
+
+    color:#666;
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    margin:25px 0;
+
 }
 
 .hero img{
-    max-height:550px;
+    width:100%;
+    max-width:600px;
+    display:block;
+    margin:auto;
     object-fit:cover;
-    transition:.4s ease;
 }
-
 .hero img:hover{
-    transform:scale(1.05);
+
+    transform:translateY(-10px);
+
 }
 
 .hero .btn{
-    padding:12px 30px;
+
+    padding:14px 34px;
+
     border-radius:50px;
-    font-weight:600;
-    transition:.3s;
+
+    transition:.35s;
+
 }
 
 .hero .btn:hover{
-    transform:translateY(-3px);
+
+    transform:translateY(-4px);
+
 }
 /* ===========================
    Why Choose Us
@@ -173,12 +220,11 @@ body {
 }
 
 .btn-success:hover{
+    background:#1f6d29;
+    border-color:#1f6d29;
     transform:translateY(-4px);
-    background:#1B4332;
-    border-color:#1B4332;
-    box-shadow:0 10px 20px rgba(0,0,0,.15);
+    box-shadow:0 15px 30px rgba(0,0,0,.15);
 }
-
 /* ===========================
    Portfolio Hero
 =========================== */
@@ -280,7 +326,7 @@ body {
 
     width:100%;
 
-    height:260px;
+    height:240px;
 
     object-fit:cover;
 
@@ -557,27 +603,6 @@ footer i:hover{
 
 }
 
-.team-avatar{
-    width:90px;
-    height:90px;
-    border-radius:50%;
-    background:#2E7D32;
-    color:#fff;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    margin:0 auto 20px;
-    font-size:32px;
-    font-weight:700;
-    box-shadow:0 10px 25px rgba(46,125,50,.25);
-    transition:.3s ease;
-}
-
-.team-card:hover .team-avatar{
-    transform:scale(1.08);
-    background:#1B4332;
-}
-
 /*==================================
 CONTACT PREVIEW
 ==================================*/
@@ -688,7 +713,7 @@ FOOTER
 
     color:#4CAF50;
 
-    padding-left:8px;
+    padding-left:10x;
 
 }
 
@@ -754,23 +779,15 @@ FOOTER
 }
 
 .contact-card{
-
     display:flex;
-
     align-items:flex-start;
-
     gap:20px;
-
-    padding:25px;
-
+    padding:30px;
     background:#fff;
-
     border-radius:18px;
-
     box-shadow:0 10px 30px rgba(0,0,0,.08);
-
-    transition:.4s;
-
+    transition:.35s;
+    margin-bottom: 25px;
 }
 
 .contact-card:hover{
@@ -782,33 +799,23 @@ FOOTER
 }
 
 .contact-card i{
-
     font-size:28px;
-
     color:#2E7D32;
-
-    margin-top:8px;
-
+    min-width:35px;
+    margin-top:5px;
 }
 
 .contact-card h5{
-
-    font-weight:700;
-
+    margin-bottom:10px;
     color:#1B4332;
-
+    font-weight:700;
 }
 
 .contact-card p{
-
-    color:#666;
-
-    margin:0;
-
-    line-height:1.8;
-
+    margin-bottom:8px;
+    line-height:1.7;
+    word-break:break-word;
 }
-
 
 
 /*==================================
@@ -1005,42 +1012,317 @@ FOOTER
 
 }
 
+/* ==========================
+   RESPONSIVE DESIGN
+========================== */
 
+@media (max-width:992px){
 
-/*==================================
-        RESPONSIVE
-==================================*/
+.hero{
+
+text-align:center;
+
+padding:70px 0;
+
+}
+
+.hero img{
+
+margin-top:40px;
+
+max-width:500px;
+
+}
+
+.company-logo{
+
+width:150px;
+
+}
+
+.navbar-nav{
+
+text-align:center;
+
+padding:20px 0;
+
+}
+
+.navbar-nav .nav-link{
+
+margin:10px 0;
+
+}
+
+.footer{
+
+text-align:center;
+
+}
+
+.footer-company-logo{
+
+width:200px;
+
+max-width:100%;
+
+height:auto;
+
+display:block;
+
+object-fit:contain;
+
+}
+
+}
+
 
 @media(max-width:768px){
 
-.contact-hero{
+.hero h1{
 
-    padding:120px 0;
-
-}
-
-.contact-hero h1{
-
-    font-size:2.3rem;
+font-size:2.4rem;
 
 }
 
-.form-box{
+.hero p{
 
-    padding:25px;
-
-}
-
-.team-card{
-
-    margin-bottom:30px;
+font-size:16px;
 
 }
 
-.location-card{
+.hero .btn{
 
-    padding:35px;
+width:100%;
+
+margin-bottom:15px;
 
 }
 
+.navbar-collapse{
+    text-align:center;
+}
+
+.navbar-nav{
+    padding-top:15px;
+}
+
+.navbar-nav .nav-link{
+    padding:10px;
+}
+
+.about-section,
+
+.services-section,
+
+.portfolio-section,
+
+.contact-section,
+
+.team-section,
+
+.location-section{
+
+padding:70px 0;
+
+}
+
+.service-card,
+
+.portfolio-card,
+
+.team-card,
+
+.contact-card{
+
+margin-bottom:25px;
+
+}
+
+.contact-card{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+.contact-card i{
+
+margin:auto;
+
+}
+
+}
+
+
+@media(max-width:576px){
+
+body{
+
+overflow-x:hidden;
+
+}
+
+.container{
+    padding-left:20px;
+    padding-right:20px;
+}
+
+.company-logo{
+
+width:120px;
+
+}
+
+.hero{
+
+padding:60px 0;
+
+}
+
+.hero h1{
+
+font-size:2rem;
+
+}
+
+.hero p{
+
+font-size:15px;
+
+}
+
+.hero img{
+
+max-width:100%;
+
+}
+
+.about-section h2{
+
+font-size:2rem;
+
+}
+
+.service-card{
+
+padding:25px;
+
+}
+
+.service-icon{
+
+font-size:2.3rem;
+
+}
+
+.footer{
+
+padding:60px 0 30px;
+
+}
+
+.footer h4{
+
+margin-top:30px;
+
+}
+
+.footer-company-logo{
+
+width:180px;
+
+}
+
+.contact-item{
+
+display:flex;
+
+align-items:flex-start;
+
+gap:12px;
+
+}
+
+}
+
+
+@media(max-width:400px){
+
+.hero h1{
+
+font-size:1.6rem;
+
+}
+
+.btn{
+
+width:100%;
+
+}
+
+@media (max-width:991px){
+
+.contact-card{
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+}
+
+.contact-card i{
+    margin:0 0 15px;
+}
+
+.contact-card div{
+    width:100%;
+}
+
+.contact-card p{
+    text-align:center;
+}
+
+}
+
+}
+
+.contact-item{
+    display:flex;
+    align-items:flex-start;
+    gap:15px;
+}
+
+.contact-item i{
+    color:#28a745;
+    font-size:20px;
+    margin-top:5px;
+}
+
+.contact-item p{
+    margin:0;
+    line-height:1.8;
+}
+
+.contact-card p,
+.contact-card a{
+    word-break:break-word;
+}
+
+.footer-company-logo{
+width:210px;
+height:auto;
+display:block;
+margin-bottom:20px;
+}
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+.service-card,
+.team-card,
+.portfolio-card,
+.contact-card{
+    cursor:pointer;
 }
