@@ -1127,6 +1127,95 @@ padding:70px 0;
 
 }
 
+.portfolio-card{
+    text-align:center;
+}
+
+.portfolio-card .p-4{
+    align-items:center;
+}
+
+.portfolio-card h4{
+    font-size:22px;
+}
+
+.portfolio-card p{
+    font-size:15px;
+}
+
+.portfolio-card .btn{
+    align-self:center;
+}
+
+.portfolio-hero h1{
+    font-size:2.2rem;
+}
+
+.portfolio-hero p{
+    font-size:16px;
+}
+
+.contact-hero h1{
+    font-size:2.2rem;
+}
+
+.contact-hero p{
+    font-size:16px;
+}
+
+.about-hero h1{
+    font-size:2.2rem;
+}
+
+.about-hero p{
+    font-size:16px;
+}
+
+.services-hero h1{
+    font-size:2.2rem;
+}
+
+.services-hero p{
+    font-size:16px;
+}
+
+.service-card{
+    text-align:center;
+}
+
+.service-card h4{
+    font-size:22px;
+}
+
+.service-card p{
+    font-size:15px;
+}
+
+.contact-card{
+    text-align:center;
+}
+
+.contact-card h5{
+    font-size:20px;
+}
+
+.contact-card p{
+    font-size:15px;
+}
+
+h2{
+    font-size:2rem;
+}
+
+.portfolio-card img{
+    height:220px;
+}
+
+.hero img{
+    max-width:90%;
+    margin:auto;
+}
+
 .service-card,
 
 .portfolio-card,
@@ -1172,6 +1261,39 @@ overflow-x:hidden;
 .company-logo{
 
 width:120px;
+
+}
+
+@media (max-width:576px){
+
+.hero h1,
+.about-hero h1,
+.services-hero h1,
+.portfolio-hero h1,
+.contact-hero h1{
+    font-size:1.9rem;
+}
+
+.hero p,
+.about-hero p,
+.services-hero p,
+.portfolio-hero p,
+.contact-hero p{
+    font-size:14px;
+}
+
+.portfolio-card h4,
+.service-card h4,
+.team-card h3{
+    font-size:20px;
+}
+
+.portfolio-card p,
+.service-card p,
+.team-card p,
+.contact-card p{
+    font-size:14px;
+}
 
 }
 
