@@ -1126,11 +1126,13 @@ margin-bottom:15px;
 }
 
 .about-section h6{
-    font-size:14px;
+    font-size:13px;
 }
 
 .about-section h2{
-    font-size:1.9rem;
+    font-size:1.4rem !important;
+    line-height:1.4 !important;
+    text-align: center;
 }
 
 .about-section p{
@@ -1150,11 +1152,23 @@ margin-bottom:15px;
 }
 
 .services-section h2{
-    font-size:1.9rem;
+    font-size:1.4rem !important;
+    line-height:1.4 !important;
+    text-align: center;
 }
 
 .services-section p{
     font-size:15px;
+}
+
+.contact-section{
+    text-align:center;
+}
+
+.contact-section h2{
+    font-size:1.4rem !important;
+    line-height:1.4 !important;
+    text-align: center;
 }
 
 .portfolio-section{
