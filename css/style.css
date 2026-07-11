@@ -1218,6 +1218,40 @@ margin-bottom:15px;
     font-size:1.7rem !important;
     text-align:center;
 }
+
+/* Portfolio footer mobile */
+.footer{
+    text-align:center;
+}
+
+.footer .col-lg-4{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.footer h3,
+.footer h4{
+    text-align:center;
+}
+
+.footer p{
+    text-align:center;
+}
+
+.footer-links{
+    padding:0;
+}
+
+.footer-links li{
+    list-style:none;
+}
+
+.footer .social-icons{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:18px;
+}
 .contact-section{
     text-align:center;
 }
