@@ -1214,6 +1214,10 @@ margin-bottom:15px;
     font-size:15px;
 }
 
+.mobile-heading{
+    font-size:1.7rem !important;
+    text-align:center;
+}
 .contact-section{
     text-align:center;
 }
