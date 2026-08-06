@@ -1,0 +1,31 @@
+# ============================================================
+# QUANXI LIMITED - Apache URL Rewrite Rules
+# Removes .html extension from page URLs
+# ============================================================
+
+Options -Indexes
+RewriteEngine On
+
+# ----------------------------------------------------------
+# 1. Redirect requests WITH .html extension to clean URLs
+#    (avoids duplicate content / keeps URLs consistent)
+# ----------------------------------------------------------
+RewriteCond %{THE_REQUEST} \s/+(.*?)\.html[\s?] [NC]
+RewriteRule ^ /%1 [R=301,L,NE]
+
+# ----------------------------------------------------------
+# 2. Allow direct access to actual files and directories
+#    (CSS, JS, images etc. are served normally)
+# ----------------------------------------------------------
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# ----------------------------------------------------------
+# 3. Rewrite clean URLs to the matching .html file
+# ----------------------------------------------------------
+RewriteRule ^([^.]+)$ $1.html [L]
+
+# ----------------------------------------------------------
+# 4. Custom error pages (optional - add your own pages)
+# ----------------------------------------------------------
+# ErrorDocument 404 /404.html
