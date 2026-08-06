@@ -1,3 +1,5 @@
+ErrorDocument 404 "TEST 404"
+
 # ============================================================
 # QUANXI LIMITED - Apache URL Rewrite Rules
 # Clean URLs (no .html extension)
