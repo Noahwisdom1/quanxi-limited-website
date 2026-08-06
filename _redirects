@@ -1,0 +1,7 @@
+# Clean URL redirects — strip .html extension
+/index      /           301
+/index.html /           301
+/about.html /about      301
+/services.html  /services   301
+/portfolio.html /portfolio  301
+/contact.html   /contact    301
