@@ -6,6 +6,7 @@ ErrorDocument 404 "TEST 404"
 # ============================================================
 
 Options -Indexes
+DirectoryIndex index.html
 RewriteEngine On
 
 # ----------------------------------------------------------
